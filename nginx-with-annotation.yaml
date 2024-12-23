@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-with-annotation
+  labels:
+    team: efef
+  annotations:
+    anno: feawfawfjaklwjfe fwajfaw
+spec:
+  containers:
+    - name: mycontainer
+      image: nginx
+      ports:
+        - containerPort: 80
